@@ -21,10 +21,8 @@ from langchain.document_loaders import PyMuPDFLoader
 from llama_index.core import VectorStoreIndex 
 from pathlib import Path
 
-# Define variable to hold llama2 weights naming
-name = "meta-llama/Llama-2-70b-chat-hf"
 # Set auth token variable from hugging face
-auth_token = "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"
+auth_token = "your_auth_token"
 
 tokenizer = AutoTokenizer.from_pretrained("meta-llama/Llama-2-7b-chat-hf", token=auth_token)
 model = AutoModelForCausalLM.from_pretrained("meta-llama/Llama-2-7b-chat-hf", token=auth_token)
