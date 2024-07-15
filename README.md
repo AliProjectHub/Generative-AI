@@ -106,7 +106,3 @@ Creates a vector store index from the loaded documents and initializes a query e
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
-Feel free to contribute to this project by submitting issues or pull requests. For any questions or support, please contact [your-email@example.com](mailto:your-email@example.com).
