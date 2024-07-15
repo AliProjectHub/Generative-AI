@@ -1,8 +1,8 @@
-# 🦙 Llama Banker
+# LLM Analytics Banker
 
 ## Overview
 
-Llama Banker is a Streamlit-based web application designed to provide insights and answers related to the financial performance of a company. Utilizing the powerful capabilities of the Hugging Face transformers and the Llama Index, this app reads and processes financial documents to generate meaningful responses to user queries.
+LLM Analytics Banker is a Streamlit-based web application designed to provide insights and answers related to the financial performance of a company. Utilizing the powerful capabilities of the Hugging Face transformers and the Llama Index, this app reads and processes financial documents to generate meaningful responses to user queries.
 
 ## Features
 
@@ -13,12 +13,12 @@ Llama Banker is a Streamlit-based web application designed to provide insights a
 
 ## Installation
 
-To get started with Llama Banker, follow these steps:
+To get started with LLM Analytics Banker, follow these steps:
 
 1. **Clone the Repository**:
     ```bash
-    git clone https://github.com/your-repo/llama-banker.git
-    cd llama-banker
+    git clone https://github.com/your-repo/Generative-AI.git
+    cd LLM_Analytics
     ```
 
 2. **Install Dependencies**:
@@ -38,7 +38,7 @@ To get started with Llama Banker, follow these steps:
 2. **Run the Streamlit App**:
     Start the Streamlit server to launch the app:
     ```bash
-    streamlit run app.py
+    streamlit run LLM_Analytics.py
     ```
 
 3. **Load PDF Document**:
@@ -94,7 +94,7 @@ Creates a vector store index from the loaded documents and initializes a query e
 
 1. **Launch the App**:
     ```bash
-    streamlit run app.py
+    streamlit run LLM_Analytics.py
     ```
 
 2. **Enter a Prompt**:
