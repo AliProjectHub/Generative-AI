@@ -18,7 +18,7 @@ To get started with LLM Analytics Banker, follow these steps:
 1. **Clone the Repository**:
     ```bash
     git clone https://github.com/your-repo/Generative-AI.git
-    cd LLM_Analytics
+    cd Generative-AI
     ```
 
 2. **Install Dependencies**:
