@@ -82,7 +82,7 @@ index = VectorStoreIndex.from_documents(documents, embed_model=embeddings)
 query_engine = index.as_query_engine(llm=llm)
 
 # Create centered main title 
-st.title('🦙 Llama Banker')
+st.title('LLM Analytics Banker')
 # Create a text input box for the user
 prompt = st.text_input('Input your prompt here')
 
