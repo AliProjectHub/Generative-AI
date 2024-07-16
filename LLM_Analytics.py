@@ -70,7 +70,7 @@ service_context = ServiceContext.from_defaults(
 set_global_service_context(service_context)
 
 # Create PDF Loader
-loader = PyMuPDFReader()
+loader = PyMuPDFLoader()
 
 # Load documents
 documents = loader.load(file_path=Path('/vol/fob-vol3/mi20/jaabousa/Dokumente/annualreport.pdf'), metadata=True)
