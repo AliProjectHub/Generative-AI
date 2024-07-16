@@ -27,6 +27,9 @@ auth_token = "your_auth_token"
 tokenizer = AutoTokenizer.from_pretrained("meta-llama/Llama-2-7b-chat-hf", token=auth_token)
 model = AutoModelForCausalLM.from_pretrained("meta-llama/Llama-2-7b-chat-hf", token=auth_token)
 
+device = torch.device("cuda:2" if torch.cuda.is_available() else "cpu")
+model.to(device)
+
 # Create a system prompt
 system_prompt = """<s>[INST] <<SYS>>
 You are a helpful, respectful and honest assistant. Always answer as
