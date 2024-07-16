@@ -17,9 +17,9 @@ from langchain.embeddings.huggingface import HuggingFaceEmbeddings
 from llama_index.legacy import ServiceContext
 from llama_index.legacy import set_global_service_context
 # Import deps to load documents
-from langchain.document_loaders import PyMuPDFLoader
 from llama_index.core import VectorStoreIndex 
 from pathlib import Path
+from llama_index.core import download_loader, Document
 
 # Set auth token variable from hugging face
 auth_token = "your_auth_token"
@@ -69,11 +69,14 @@ service_context = ServiceContext.from_defaults(
 # And set the service context
 set_global_service_context(service_context)
 
-# Create PDF Loader
-loader = PyMuPDFLoader()
+PyMuPDFReader = download_loader("PyMuPDFReader")
 
-# Load documents
-documents = loader.load(file_path=Path('/vol/fob-vol3/mi20/jaabousa/Dokumente/annualreport.pdf'), metadata=True)
+# Create PDF Loader
+loader = PyMuPDFReader()
+
+file_path = Path('/vol/fob-vol3/mi20/jaabousa/Dokumente/annualreport.pdf')
+
+documents = loader.load(file_path=file_path, metadata=True)
 
 service_context = ServiceContext.from_defaults(
     chunk_size=1024,
