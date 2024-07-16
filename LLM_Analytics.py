@@ -7,7 +7,7 @@ import torch
 # Import the prompt wrapper...but for llama index
 from llama_index.core.prompts.prompts import SimpleInputPrompt
 # Import the llama index HF Wrapper
-#from llama_index.llms.huggingface import HuggingFaceLLM
+from llama_index.llms.huggingface import HuggingFaceLLM
 # Bring in embeddings wrapper
 from llama_index.legacy.embeddings.langchain import LangchainEmbedding
 # Bring in HF embeddings - need these to represent document chunks
