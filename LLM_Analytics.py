@@ -74,7 +74,7 @@ PyMuPDFReader = download_loader("PyMuPDFReader")
 # Create PDF Loader
 loader = PyMuPDFReader()
 
-file_path = Path('/vol/fob-vol3/mi20/jaabousa/Dokumente/annualreport.pdf')
+file_path = Path('.../annualreport.pdf')
 
 documents = loader.load(file_path=file_path, metadata=True)
 
